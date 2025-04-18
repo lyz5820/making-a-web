@@ -1,0 +1,43 @@
+
+<!-- 开一个大小 x,y, -> 图片/颜色 -> 图片的大小 -> 图片在盒子里怎么移动 -> 设置是否重复 -->
+<!-- 背景 -->
+<!-- background-image:url();--应用img里面的图片 -->
+<!-- background-size --设置图片大小   -> background-size : （长） (宽); 100% / auto / (任意设置大小)px -->
+<!-- background-repeat -- 设置重复  , 设置不重复-  --background-repeat: no-repeat; -->
+<!-- background-position -- 设置位置 background-position: /* x方向移动多少*/()   /*y方向移动多少*/()  auto / x% /x px-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>图片/背景</title>
+		<style>
+			 #bg{
+				 width : 200px;
+				 height: 200px;
+				 background-color: black;
+			 }
+			 #bg1{
+				 /* 设置一个黑色的1px的粗细的边框 */
+				 border:solid black 1px;  
+				 /* 设置最大的长宽 */
+				 width:500px;  
+				 height:500px; 
+				 /* 设置图片从哪里导来 */
+				 background-image: url("img/OIP-C.jpg");
+				 /* 设置图片大小 */
+				 background-size : auto 100px;
+				 
+				 background-position: /* x方向移动多少*/ 10px /*y方向移动多少*/10%
+				 /* 设置图片是否重复 */
+				 background-repeat: no-repeat;
+			 }
+		</style>
+	</head>
+	<body>
+		<div id="bg"></div>
+		<br><br><br>
+		<div id="bg1"></div>
+	</body>
+</html>

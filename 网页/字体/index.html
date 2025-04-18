@@ -1,0 +1,61 @@
+<!-- text  文本 -->
+<!-- aline  排列-->  <!-- 决定文本的位置 ： left  center  right -->
+<!-- decoration  修饰 -->   <!-- 有一个横线，决定横线的位置 underline overline line-through -->
+<!-- 设置阴影 ， text-shadow: (x方向偏移大小)px (y方向偏移大小)px (模糊度)px 颜色 -->
+<!-- 设置字大小 font-size: (系数大小) (单位：px pt em   1em=16px 1em为正常大小) -->
+<!-- 设置字的粗细  font-weight:(大小)(单位)100px为正常大小 -->
+
+<!--
+文字缩进和字间隔
+缩进  text-indent
+字间隔  letter-spacing
+单词间隔  word-spacing  ->只对单词有效
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>页面1</title>
+		<style type="text/css">
+	        p{ 
+		        color: #ff0000;       /* p所包含的东西为红色 */
+				
+				    display: block;
+				    text-align:center;
+					 /* display : inline-block;
+					 width:50%;
+					 text-align:center;	 */
+					
+					text-shadow: 5px 5px 1px black ;
+					 
+			}
+			b{
+				color:deeppink;
+				text-decoration: line-through;
+				font-size: 2em;
+				font-weight:500;
+			 }
+			 
+			 div{
+				 color : rgb(255,0,255);
+				 /* 字缩进 */
+				 text-indent: 200px;
+				 /* 字间隔 */
+				 letter-spacing:3px;
+				 /* 单词间隔 */
+				 /* word-spacing:100px; */
+			 }
+			 
+		</style>
+	</head>
+	<body>
+			<p>asdfg</p>
+		<b>zxcvb </b> <br>
+		<div>qewrty</div>
+		<!-- <a href="网页/字体/img/OIP-C.jpg">点击看图片</a> -->
+		<a href="http://127.0.0.1:8848/%E7%8E%A9%E7%AC%91/index.html">点击看涩图</a>
+	</body>
+</html>
+
+ <!-- s -- 中间有横线，q为加一个双引号 -->
